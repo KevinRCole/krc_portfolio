@@ -1,0 +1,190 @@
+/* This first CSS rule sets a universal "border-box" value to the height and width of html elements, meaning that an html elements height and width measurements include padding and borders. */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {white-space: nowrap;}
+
+/* The next CSS rule sets the background color of the body of the webpage to a very light gray. */
+
+body {
+    background-color: #d9dcd6;
+}
+
+/* The next CSS rule styles the main header of the webpage */
+
+.main-header-flex-container {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+/* The next CSS rule sets the font size for the "Kevin Cole's Portfolio" in the header */
+
+.main-header-flex-container h1 {
+    /* display: inline-block; */
+    /* display: flex; */
+    font-size: 48px;
+    
+} 
+.main-header-flex-container nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    /* float: right; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px; 
+}
+
+.main-header-flex-container nav ul {
+    list-style-type: none;
+    display:flex;
+    justify-content:space-between;
+}
+.main-header-flex-container nav ul li {
+    /* display: inline-block; */
+    margin-left: 25px;
+}
+
+        /* The next CSS rule sets the color (very light gray) for the hypertext links in the HTML nav element in upper right corner of webpage */
+
+.main-header-flex-container nav ul li a {
+    color: #ffffff;
+        text-decoration: none;
+}
+
+/* The next CSS rule just sets the font size for the paragraphs */
+
+p {
+    font-size: 20px;
+} 
+
+.ocean-beach-image {
+    height: 400px;
+    width: 100%;
+    /* margin-bottom: 2px; */
+    background-image: url("../images/white-beach-and-sea-cropped.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.main-part-of-website-flex-container {
+    /* Turns this element into a flexbox */
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    /* margin-top: 2%; */
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+    justify-content: space-between;
+}
+
+.section-for-bio-flex-container {
+    width: 100%;
+    border-style: solid;
+    border-color: white;
+    height: auto;
+    display: flex;
+    justify-content: start;
+      
+}
+
+.section-for-bio-flex-container h2, img, p {
+    padding: 30px;
+
+}
+
+.section-for-bio-flex-container h2 {
+    width: 15%;
+    white-space: nowrap;
+}
+
+.section-for-bio-flex-container img {
+    width: 200px;   .main-header-flex-container nav ul
+
+}
+
+  
+.section-for-work-flex-container {
+    width: 100%;
+    border-style: solid;
+    border-color: white;
+    height: auto;
+    display: flex;
+    justify-content: start;
+}
+
+.section-for-work-flex-container h2, img, p {
+    padding: 30px;
+}
+
+.section-for-work-flex-container h2 {
+    width: 15%;
+    white-space: nowrap;
+}
+.section-for-work-flex-container img {
+    width: 300px;
+}
+
+
+.section-for-work-flex-container img:hover {
+    transform: scale(3.0);
+}
+
+.section-for-contact-flex-container {
+    width: 100%;
+    border-style: solid;
+    border-color: white;
+    /* height: auto; */
+    height: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.section-for-contact-flex-container h2, p, a {
+    padding: 30px;
+}
+.section-for-contact-flex-container h2 {
+    width: 15%;
+    white-space: nowrap;
+}
+
+.section-for-contact-flex-container a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+footer {
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    height:max-content;
+    
+}
+@media screen and (max-width: 768px)
+
+{   .main-header-flex-container, 
+    .main-part-of-website-flex-container,
+    .main-header-flex-container nav ul,
+    .section-for-bio-flex-container,
+    .section-for-work-flex-container,
+    .section-for-contact-flex-container
+    {flex-direction: column;
+    }
+}
+
+
+
