@@ -1,3 +1,4 @@
+
 /* This first CSS rule sets a universal "border-box" value to the height and width of html elements, meaning that an html elements height and width measurements include padding and borders. */
 
 * {
@@ -6,7 +7,15 @@
     margin: 0;
 }
 
+/* this next CSS rule prevents the hyperlink texts from wrapping when screen size shrinks
+ */
 a {white-space: nowrap;}
+
+/* The next CSS rule just sets the font size for the paragraphs */
+
+p {
+    font-size: 20px;
+} 
 
 /* The next CSS rule sets the background color of the body of the webpage to a very light gray. */
 
@@ -14,7 +23,7 @@ body {
     background-color: #d9dcd6;
 }
 
-/* The next CSS rule styles the main header of the webpage */
+/* The next CSS rule styles the main header of the webpage, which is a flex box container; the items of this flex box container are the header "Kevin Cole's Portfolio," and the nav bar */
 
 .main-header-flex-container {
     padding: 20px;
@@ -32,6 +41,8 @@ body {
     font-size: 48px;
     
 } 
+
+/* This next CSS rule styles the nav bar */
 .main-header-flex-container nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -40,29 +51,22 @@ body {
     font-size: 20px; 
 }
 
+/* This next CSS rule turns the nav ul element into a flex box, and the individual items are it's flex items */
 .main-header-flex-container nav ul {
     list-style-type: none;
     display:flex;
     justify-content:space-between;
 }
 .main-header-flex-container nav ul li {
-    /* display: inline-block; */
-    margin-left: 25px;
+        margin-left: 25px;
 }
 
-        /* The next CSS rule sets the color (very light gray) for the hypertext links in the HTML nav element in upper right corner of webpage */
-
+/* The next CSS rule sets the color (very light gray) for the hypertext links in the HTML nav element in upper right corner of webpage */
 .main-header-flex-container nav ul li a {
     color: #ffffff;
         text-decoration: none;
 }
-
-/* The next CSS rule just sets the font size for the paragraphs */
-
-p {
-    font-size: 20px;
-} 
-
+/* The next CSS rule styles the filler, background picture in the middle of the webpage */
 .ocean-beach-image {
     height: 400px;
     width: 100%;
@@ -73,7 +77,7 @@ p {
 }
 
 
-
+/* The next CSS rule formats and turns the main section of the webpage into a flex container; the three separate sections inside the main element are the flex items of this container */
 .main-part-of-website-flex-container {
     /* Turns this element into a flexbox */
     display: flex;
@@ -86,7 +90,7 @@ p {
     color: #ffffff;
     justify-content: space-between;
 }
-
+/* The following section-for-bio-flex-container is the first item, or "child" of the main flex box, and this section is itself a flex container */
 .section-for-bio-flex-container {
     width: 100%;
     border-style: solid;
@@ -96,7 +100,6 @@ p {
     justify-content: start;
       
 }
-
 .section-for-bio-flex-container h2, img, p {
     padding: 30px;
 
@@ -108,11 +111,11 @@ p {
 }
 
 .section-for-bio-flex-container img {
-    width: 200px;   .main-header-flex-container nav ul
-
+    width: 200px;  
+    
 }
 
-  
+/* This next section is the second item or "child" of the maain flex box, and this section is itself a flex container */
 .section-for-work-flex-container {
     width: 100%;
     border-style: solid;
@@ -138,7 +141,7 @@ p {
 .section-for-work-flex-container img:hover {
     transform: scale(3.0);
 }
-
+/* The next section-for-contact-flex container is the third "child" of the main flex container, and is itself a flex container */
 .section-for-contact-flex-container {
     width: 100%;
     border-style: solid;
@@ -155,6 +158,7 @@ p {
 .section-for-contact-flex-container h2 {
     width: 15%;
     white-space: nowrap;
+    
 }
 
 .section-for-contact-flex-container a {
@@ -174,6 +178,8 @@ footer {
     height:max-content;
     
 }
+
+/* This next CSS rule reformats the above flex boxes into columns when teh screen size is reduced to 768px or less */
 @media screen and (max-width: 768px)
 
 {   .main-header-flex-container, 

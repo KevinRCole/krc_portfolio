@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+
+<!-- include reset.css file in head section, to reset basic css defaults at start of this project; also include viewport command for use with media querry -->
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/ccc/rest.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   
-    <!-- make title to Kevin Cole's Portfolio -->
-    
+<!-- make title "Kevin Cole's Portfolio" so that phrase shows up in brower tab -->
     <title>Kevin Cole's Portfolio</title>
 </head>
 
 <body>
     
-    <!-- Make Header that lets user know my name, and that his is my portfolio, and includes navigation bar -->
-    
+    <!-- Make webpage eader that lets user know my name, and that this is my portfolio, and that includes navigation bar -->
+    <!-- give header CSS selector class that describes it as a flex container, for my benefit, because just now learning about flex boxes -->
+    <!-- use "header" and "nav" tags, rather than div tags, for better HTML semantics -->
+
     <header class="main-header-flex-container">
         
         <h1>Kevin Cole's Portfolio</h1>
@@ -35,10 +39,12 @@
 
     </header>
 
-         
+    <!-- use div tag to place webpage filler photo, between header and main.  will style this photo in CSS -->
+
     <div class="ocean-beach-image"></div>
-            
     
+    <!-- use "main" tag for HTML semantics; assign CSS class names to HTML elements here to help me understand and apply flex box;
+    each section is a flex box item inside of the main element, which is a flex box container -->
     
     <main class="main-part-of-website-flex-container">
         
@@ -80,7 +86,8 @@
     </main>
 
     
-        
+    <!-- user footer tag here for HTML semantics
+      -->
     <footer>
         <div>Website made by Kevin Cole</div>
         
